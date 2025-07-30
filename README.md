@@ -137,6 +137,21 @@ i realized two things today:
    - open the latest files in `data/weights/` to see how each run is weighted
    - see your updated probability in the terminal output and in the plot
 
+## how to customize your goal
+
+to change the **target distance** (for example: 1 mile, 2 miles, 5k, etc):
+
+- open `runprediction.py` in a text editor
+- find the lines below and change `1.5` to your new goal distance
+
+**lines to edit:**
+
+```python
+df["est_1.5_time"] = df["pace"] * 1.5   # <-- change 1.5 to your distance
+...
+# distance similarity weight (gaussian bell curve centered at your goal distance)
+df["w_distance"] = np.exp(-((df["distance"] - 1.5) ** 2) / (2 * SIGMA_D ** 2))   # <-- change 1.5 to your distance
+
 that’s it.  
 just run, update, and repeat.
 

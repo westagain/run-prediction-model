@@ -60,6 +60,7 @@ weights_dir = Path("data/weights")
 weights_dir.mkdir(parents=True, exist_ok=True)
 weights_file = weights_dir / f"{today_str}_weights.json"
 
+
 with open(weights_file, "w") as f:
     json.dump(weights_out, f, indent=2)
 # --- WEIGHTED LINEAR REGRESSION ------------------------------------------
@@ -129,3 +130,17 @@ print(f"  Median forecast:             {q50:.2f} min")
 print(f"  95th percentile (pessimistic): {q95:.2f} min")
 print(f"  Probability of sub-9:00:     {prob_sub9:.1%}")
 print("\nAll weights (recency, distance, combined) saved to data/weights.json")
+
+# --- SAVE PREDICTION TO JSON BY DATE -------------------------------------
+predictions_dir = Path("data/predictions")
+predictions_dir.mkdir(parents=True, exist_ok=True)
+prediction_file = predictions_dir / f"prediction_{today_str}.json"
+
+prediction_out = {
+    "5th percentile (optimistic)": f"{q5:.2f} min",
+    "Median forecast": f"{q50:.2f} min",
+    "95th percentile (pessimistic)": f"{q95:.2f} min",
+    "Probability of sub-9:00": f"{prob_sub9:.1%}"
+}
+with open(prediction_file, "w") as f:
+    json.dump(prediction_out, f, indent=2)
