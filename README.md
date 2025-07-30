@@ -86,7 +86,7 @@ example data:
 
 ## day-to-day philosophy
 
-update data, model, and forecasts daily until August 15, 2025
+update data, model, and forecasts daily until august 15, 2025
 this repo is a transparent, honest log of training and self improvement with the numbers to back it up
 ironically i need more data which means i have to run more, which in itself making this model has increased me running more to get more data
 
