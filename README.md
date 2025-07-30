@@ -14,6 +14,8 @@ you can view the run time dataset in the /data/runtimes.json file
 
 i thought it would be fun to make a model that can predict whether i will or not and find out the results on the final day
 
+there is an update log on the bottom to read daily updates
+
 ---
 
 ## scientific method:
@@ -100,12 +102,6 @@ this run influences the model accordingly since I didn't run the full 1.5 miles 
 
 ---
 
-## license
-
-MIT
-
----
-
 ## update log
 
 *july 29, 2025, 23:00*
@@ -114,8 +110,8 @@ when i was running today, i started my first two laps with pace but reveille sta
 
 i realized two things today: 
 
-- i needed to weigh the distance i ran, so i added the weighted guassian bell curve with max score at 1.5 miles ran. 
-- i needed to present the data chronologically so i made the data/weights and data/predictions folder to help visualize the data as the days progressed (prob make the data/predictions folder and files tomorrow).
+- i needed to weigh the distance i ran, so i added the weighted guassian bell curve with max score at 1.5 miles ran
+- i needed to present the data chronologically so i made the data/weights and data/predictions folder to help visualize the data as the days progressed (prob make the data/predictions folder and files tomorrow)
 
 ---
 
@@ -140,5 +136,11 @@ i realized two things today:
 
 that’s it.  
 just run, update, and repeat.
+
+---
+
+## license
+
+MIT
 
 ---
