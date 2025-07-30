@@ -115,21 +115,24 @@ i realized two things today:
 
 ---
 
-## how to run
+## how to run (no pun intended)
 
 1. clone the repo  
    `git clone https://github.com/westagain/run-prediction-model.git`
 
-2. install requirements  
+2. change directory  
+   `cd run-prediction-model`
+
+3. install requirements  
    `pip install -r requirements.txt`
 
-3. run the script  
+4. run the script  
    `python runprediction.py`
 
-4. update your data  
+5. update your data  
    just edit `data/runtimes.json` with your new run (add a new line in the same format as the others)
 
-5. check out the results  
+6. check out the results  
    - predictions, visuals, and weights get updated automatically
    - open the latest files in `data/weights/` to see how each run is weighted
    - see your updated probability in the terminal output and in the plot
@@ -138,6 +141,7 @@ that’s it.
 just run, update, and repeat.
 
 ---
+
 
 ## license
 
