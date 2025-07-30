@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import json
 from datetime import datetime, timedelta
 from sklearn.linear_model import LinearRegression
+from pathlib import Path
 import os
 
 # --- LOAD DATA FROM JSON -------------------------------------------------
@@ -53,9 +54,14 @@ for i, row in df.iterrows():
         "w_distance": float(row["w_distance"]),
         "weight_total": float(row["weight_total"])
     })
-with open("data/weights.json", "w") as f:
-    json.dump(weights_out, f, indent=2)
+# --- OUTPUT WEIGHTS TO JSON (with date) -------------------------------
+today_str = datetime.now().strftime("%Y-%m-%d")
+weights_dir = Path("data/weights")
+weights_dir.mkdir(parents=True, exist_ok=True)
+weights_file = weights_dir / f"{today_str}_weights.json"
 
+with open(weights_file, "w") as f:
+    json.dump(weights_out, f, indent=2)
 # --- WEIGHTED LINEAR REGRESSION ------------------------------------------
 X = df["days_since_start"].values.reshape(-1,1)
 y = df["est_1.5_time"].values
