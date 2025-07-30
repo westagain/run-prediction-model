@@ -151,6 +151,7 @@ df["est_1.5_time"] = df["pace"] * 1.5   # <-- change 1.5 to your distance
 ...
 # distance similarity weight (gaussian bell curve centered at your goal distance)
 df["w_distance"] = np.exp(-((df["distance"] - 1.5) ** 2) / (2 * SIGMA_D ** 2))   # <-- change 1.5 to your distance
+```
 
 that’s it.  
 just run, update, and repeat.
