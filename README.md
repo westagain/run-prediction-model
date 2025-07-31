@@ -113,6 +113,17 @@ i realized two things today:
 - i needed to weigh the distance i ran, so i added the weighted guassian bell curve with max score at 1.5 miles ran
 - i needed to present the data chronologically so i made the data/weights and data/predictions folder to help visualize the data as the days progressed (prob make the data/predictions folder and files tomorrow)
 
+*july 30, 2025, 23:00*
+
+today was incredibly disappointing. no excuses on the day. i ran like i had no idea what i was doing albeit had a softball game for our squadron today and ran 50 minutes after. idk. hopefully this is just a bad day on the track but holy cow. 20% chance for a sub 9:00 1.5 mile. 
+
+things i added today:
+
+- created the data/predictions folder and inserting data for it to see the predictions daily easier. prob when i get closer i will make a graph plotting predictions and stuff. but that's for after the run.
+- i was kind of focused on another project that flopped today so not much added here.
+
+all in all, i took the L. but we bounce back. we always do.
+
 ---
 
 ## how to run (no pun intended)
