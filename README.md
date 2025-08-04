@@ -5,7 +5,7 @@
 *started july 28, 2025:*
 
 i wanted to answer one question:
-can i run 1.5 miles in under 9:00 by august 15, 2025?
+can i run 1.5 miles in under 9:00 by august 06, 2025?
 
 this repo is the day-to-day, real-time, transparent data science log of that goal
 
@@ -123,6 +123,12 @@ things i added today:
 - i was kind of focused on another project that flopped today so not much added here.
 
 all in all, i took the L. but we bounce back. we always do.
+
+*august 03, 2025, 20:27*
+
+heavy update. the run test was moved a week earlier to aug 06. this puts a dent in the plans but the model showed it's robustness by being able to adapt to this change. bad news: run date moved a week earlier. good news: model is robust
+
+now at 14.1% to surpass this threshold. not sure how to plan now but godspeed.
 
 ---
 

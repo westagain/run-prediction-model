@@ -26,7 +26,7 @@ df["est_1.5_time"] = df["pace"] * 1.5
 # --- PARAMETERS ----------------------------------------------------------
 HALF_LIFE = 60  # days
 SIMULATIONS = 10000
-TARGET_DATE = pd.to_datetime("2025-08-15")
+TARGET_DATE = pd.to_datetime("2025-08-06")
 SIGMA_D = 0.4  # Distance Gaussian width (in miles)
 
 # --- FEATURE ENGINEERING -------------------------------------------------
@@ -107,7 +107,7 @@ plt.fill_between(future_dates, lower_pred, upper_pred, color='#a8b9d1', alpha=0.
                  label="90% Confidence Band", zorder=3)
 plt.axhline(9, color="#383838", linestyle="--", linewidth=2, label="9:00 Target", zorder=2)
 plt.axvline(TARGET_DATE, color="#b2182b", linestyle=":", linewidth=2, zorder=2)
-plt.scatter([TARGET_DATE], [q50], color="#b2182b", s=140, zorder=8, label="August 15, 2025 Median")
+plt.scatter([TARGET_DATE], [q50], color="#b2182b", s=140, zorder=8, label="August 06, 2025 Median")
 plt.text(TARGET_DATE, q50 + 0.1, f"Median: {q50:.2f} min", fontsize=14, color="#b2182b",
          ha="center", va='bottom', fontweight='bold', family='sans-serif')
 plt.text(TARGET_DATE, 8.55, f"P(<9:00) = {prob_sub9:.1%}", fontsize=15, color="#0d0d0d",
@@ -115,7 +115,7 @@ plt.text(TARGET_DATE, 8.55, f"P(<9:00) = {prob_sub9:.1%}", fontsize=15, color="#
          bbox=dict(facecolor='#fafafa', edgecolor='#e1e1e1', boxstyle='round,pad=0.22', alpha=0.85))
 plt.xlabel("Date", fontsize=17, weight='light', family='sans-serif', labelpad=12)
 plt.ylabel("1.5-Mile Time (min)", fontsize=17, weight='light', family='sans-serif', labelpad=12)
-plt.title("Probabilistic Forecast of Sub-9:00 1.5-Mile Run by August 15, 2025",
+plt.title("Probabilistic Forecast of Sub-9:00 1.5-Mile Run by August 06, 2025",
           fontsize=21, weight='medium', family='sans-serif', pad=17)
 plt.legend(frameon=False, fontsize=13, loc='upper right')
 plt.xticks(fontsize=13, family='sans-serif')
@@ -124,7 +124,7 @@ plt.tight_layout()
 plt.show()
 
 # --- PRINT SUMMARY TABLE -------------------------------------------------
-print("Forecast for August 15, 2025:")
+print("Forecast for August 06, 2025:")
 print(f"  5th percentile (optimistic): {q5:.2f} min")
 print(f"  Median forecast:             {q50:.2f} min")
 print(f"  95th percentile (pessimistic): {q95:.2f} min")
