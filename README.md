@@ -130,6 +130,10 @@ heavy update. the run test was moved a week earlier to aug 06. this puts a dent 
 
 now at 14.1% to surpass this threshold. not sure how to plan now but godspeed.
 
+*august 04, 2025, 22:11*
+
+rest day until run. not the optimal approach.
+
 ---
 
 ## how to run (no pun intended)
