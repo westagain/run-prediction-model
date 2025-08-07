@@ -134,6 +134,20 @@ now at 14.1% to surpass this threshold. not sure how to plan now but godspeed.
 
 rest day until run. not the optimal approach.
 
+*august 06, 2025, 22:07*
+
+final day happened and got a 9:38 time on the final run. from where i started to this time, i have cut my run time by 150 seconds in the span of 4 months which i am really proud of. i wasn't able to get all the run data in since i didn't have my phone for a decent amount of runs. but all in all, proud of myself for the work.
+
+---
+
+## conclusion
+
+*epilogue*
+
+looking back on the data collection, i believe there were some errors in the running app i was using. for the future using a wristwatch or smart watch would be a smarter approach as the location tracking wasn't perfect for the small track that i was able to run. so the data was corrupted and made it appear i ran faster than the time actually was. i played along with this data for cognitive bias reasons, it felt good looking at my app and seeing those scores.
+
+the model itself was well crafted for a first time machine learning experience. i learned a lot about this field and why it is such a booming environment right now. i made this project to showcase world real applicablility with precise skills in machine learning. thank you for following along.
+
 ---
 
 ## how to run (no pun intended)
